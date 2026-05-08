@@ -1,6 +1,6 @@
 {
     "repositoryUrl": "mapswipe/website",
-    "branch": "stage",
+    "branch": "deploy-stage",
     "submodules": true,
     "nodeVersion": "18.x",
 
