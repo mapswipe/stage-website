@@ -109,7 +109,8 @@ jobs:
         if: ${{ steps.cfg.outputs.fetch != '' }}
         working-directory: source
         run: ${{ steps.cfg.outputs.fetch }}
-
+      - name: Set build date
+        run: echo "MAPSWIPE_BUILD_DATE=$MAPSWIPE_API_LAST_MODIFIED_EPOCH" >> "$GITHUB_ENV"
       - name: Build (and/or test)
         if: ${{ steps.cfg.outputs.build != '' }}
         working-directory: source
