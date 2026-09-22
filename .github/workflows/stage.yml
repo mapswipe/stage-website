@@ -33,6 +33,8 @@ jobs:
       NEXT_PUBLIC_POSTHOG_KEY: ${{ vars.NEXT_PUBLIC_POSTHOG_KEY }}
       NEXT_PUBLIC_POSTHOG_HOST_API: ${{ vars.NEXT_PUBLIC_POSTHOG_HOST_API }}
       NEXT_PUBLIC_BASE_PREFIX: ${{ vars.NEXT_PUBLIC_BASE_PREFIX }}
+      NEXT_PUBLIC_CARTO_BASEMAP_KEY: ${{ vars.NEXT_PUBLIC_CARTO_BASEMAP_KEY }}
+
 
     steps:
       - name: Checkout staging repo (to read config & deploy)
